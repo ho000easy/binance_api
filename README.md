@@ -2,7 +2,7 @@
 I, ZhangYe, fully own the code I submit.  I guarantee there are no copyright or license restrictions.  I further agree any code I submit will be in public domain.  Anyone can copy, change, derive further work from it without any restrictions.
 
 # Overview
-A java client for binance REST api.For more information on the API and parameters for requests visit[https://www.binance.com/restapipub.htm](https://www.binance.com/restapipub.html)
+A java client for binance REST api.For more information on the API and parameters for requests visit [https://www.binance.com/restapipub.htm](https://www.binance.com/restapipub.html)
 This client use **lombok** to help the cleanness of code. For more information about lombok please visit [https://projectlombok.org/](https://projectlombok.org/)
 # Features
 * Implementation of General, Market Data and Account endpoints
