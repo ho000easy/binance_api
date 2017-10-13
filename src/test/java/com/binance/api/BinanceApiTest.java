@@ -16,8 +16,8 @@ public class BinanceApiTest {
 
     @Before
     public void before(){
-        binanceApi = new BinanceApi("voCUSaT37yV3SvsjmwDLj709CQRLbJXNk62KNq6mpY8T1KaISnvXD2jo1MBoIPzf",
-                "GhjfadQMlgzoa8CKOzJJOs3Q2i1CnyCr6FcZWZtVPsoKU34FA7J5CNfRGLY1WavG");
+        binanceApi = new BinanceApi("apiKey",
+                "apiSecret");
     }
 
     @Test
