@@ -11,7 +11,6 @@ import java.util.List;
  * Created by zy on 2017/10/13.
  */
 public class BinanceApiTest {
-    private static final String SYMBOL = "LTCBTC";
     private BinanceApi binanceApi;
 
     @Before
@@ -35,10 +34,10 @@ public class BinanceApiTest {
 
     @Test
     public void testDepth(){
-        BinanceApi.OrderBook orderBook = binanceApi.getDepth(SYMBOL);
+        BinanceApi.OrderBook orderBook = binanceApi.getDepth("LTCBTC");
         Assert.assertNotNull(orderBook.getLastUpdateId());
 
-        BinanceApi.OrderBook orderBook20 = binanceApi.getDepth(SYMBOL, 20);
+        BinanceApi.OrderBook orderBook20 = binanceApi.getDepth("LTCBTC", 20);
         Assert.assertTrue(orderBook20.getAsks().size() == 20);
     }
 
