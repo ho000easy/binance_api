@@ -36,7 +36,7 @@ BinanceApi.OrderBook orderBook20 = binanceApi.getDepth("LTCBTC", 20);
 ```
 
 ##### Get latest price of symbol
-```
+```java
 BigDecimal price = binanceApi.getLatestPrice("LTCBTC");
 ```
 ##### Place limit order
@@ -50,7 +50,7 @@ BinanceApi.PlaceOrderResponse placeOrderResponse = binanceApi.placeLimitOrder(pl
 ```
 
 ##### Place market order
-```
+```java
 BinanceApi.PlaceOrderRequest placeOrderRequest = new BinanceApi.PlaceOrderRequest();
 placeOrderRequest.setOrderSide(BinanceApi.OrderSide.BUY);
 placeOrderRequest.setSymbol("LTCBTC");
@@ -58,22 +58,22 @@ placeOrderRequest.setQuantity(new BigDecimal("1"));
 BinanceApi.PlaceOrderResponse placeOrderResponse = binanceApi.placeMarketOrder(placeOrderRequest);
 ```
 ##### Get order
-```
+```java
 BinanceApi.Order order = binanceApi.getOrder("LTCBTC", 123456L);
 ```
 
 ##### Cancel order
-```
+```java
 BinanceApi.CancelOrderResponse cancelOrderResponse = binanceApi.cancelOrder("LTCBTC", 123456L);
 ```
 
 ##### Get Open orders
-```
+```java
 List<BinanceApi.Order> orders = binanceApi.openOrders("LTCBTC");
 ```
 
 ##### Get Account Info
-```
+```java
 BinanceApi.AccountInfo accountInfo = binanceApi.getAccount();
 // specify the recWindow
 BinanceApi.AccountInfo accountInfoRecWindwo = binanceApi.getAccount(5000L);
