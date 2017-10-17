@@ -20,16 +20,16 @@ This client use **lombok** to help the cleanness of code. For more information a
     ```
 # Examples
 #### First Init BinanceApi
-```
+```java
 BinanceApi binanceApi = new BinanceApi("apiKey","apiSecret");
 ```
 
 ##### Get the server time
-```
+```java
 Long serverTime = binanceApi.getServerTime();
 ```
 ##### Get the depth of symbol
-```
+```java
 BinanceApi.OrderBook orderBook = binanceApi.getDepth("LTCBTC");
 // get depth with limit number
 BinanceApi.OrderBook orderBook20 = binanceApi.getDepth("LTCBTC", 20);
