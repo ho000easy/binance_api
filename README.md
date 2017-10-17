@@ -1,5 +1,4 @@
-# Binance Java API
-I, ZhangYe, fully own the code I submit.  I guarantee there are no copyright or license restrictions.  I further agree any code I submit will be in public domain.  Anyone can copy, change, derive further work from it without any restrictions.
+# Java Binance API
 
 # Overview
 A java client for binance REST api.For more information on the API and parameters for requests visit [https://www.binance.com/restapipub.htm](https://www.binance.com/restapipub.html)
